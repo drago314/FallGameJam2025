@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     public float speed, life, damage;
     public bool explosive;
     public int pierces = 0;
+    public GameObject onDeath;
 
     private void Start()
     {
@@ -31,6 +32,7 @@ public class Bullet : MonoBehaviour
                     z.TakeDamage(damage * (5f-dist));
                 }
             }
+            if (onDeath) { GameObject go = Instantiate(onDeath, transform.position, onDeath.transform.rotation); Destroy(go, 3); }
         }
         pierces--; if (pierces <= 0) Destroy(gameObject);
     }
