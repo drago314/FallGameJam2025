@@ -9,5 +9,6 @@ public class MinigameManager : MonoBehaviour
     public GameObject[] popups;
     int currentPopup;
 
-
+    float timeBetweenZombies;
+    //float 
 }
