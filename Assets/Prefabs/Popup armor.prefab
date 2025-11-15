@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9768411, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.64779866, g: 0.32516953, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bronze Pistol
+  m_text: Bronze helmet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d513e6907b4672428f4f43bd2540c18, type: 2}
   m_sharedMaterial: {fileID: -8171110777373096676, guid: 6d513e6907b4672428f4f43bd2540c18, type: 2}
@@ -266,7 +266,7 @@ RectTransform:
   m_GameObject: {fileID: 5668472843554477863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 2.4, y: 2.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5890336477970193473}
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b5647fd2973f5540a519322b483b1c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ab181a98e7ee7a4b97df2dea192b53e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 8016296282194279619}
   - component: {fileID: 4796704112222000326}
   m_Layer: 5
-  m_Name: Popup
+  m_Name: Popup armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -482,8 +482,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53197e457ac4a844da092ea88290d368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myWeapon: {fileID: 11400000, guid: 867b4eef3949108499d23f84857377f2, type: 2}
-  price: 5.99
+  armorPiece: {fileID: 762083279504512041, guid: 67a8fd36b9a0904419cbe81662e2f8bc, type: 3}
+  myWeapon: {fileID: 0}
+  price: 3.99
   priceText: {fileID: 5837857963840832507}
   buySource: {fileID: 6795679256632386740, guid: 9f9309157184ddf459bcef86bf7dc43e, type: 3}
 --- !u!82 &4796704112222000326

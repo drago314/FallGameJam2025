@@ -4,7 +4,7 @@ using UnityEngine;
 public class Weapon : ScriptableObject
 {
     public GameObject bullet, pickup;
-    public float firerate;
+    public float firerate, damage;
     public Sprite sprite;
     public float spray;
 }

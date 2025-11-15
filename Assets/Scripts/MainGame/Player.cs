@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     float hitTimer;
 
     public float armor;
+    public Transform armorHeadHolder, armorTorsoHolder;
     private float timeSinceLastDamage = 0f;
     private float TIME_BEFORE_START_HEAL = 2f;
 
@@ -103,6 +104,24 @@ public class Player : MonoBehaviour
         foreach (SpriteRenderer sr in sr)
         {
             sr.material = defaultMat;
+        }
+    }
+
+    public void AddArmor(GameObject newPiece)
+    {
+        if (newPiece.GetComponent<ArmorPiece>().head)
+        {
+            Instantiate(newPiece, armorHeadHolder);
+        }
+        else { Instantiate(newPiece, armorTorsoHolder); }
+
+        newPiece.GetComponent<SpriteRenderer>().sortingOrder = sr[0].sortingOrder + 1;
+
+            armor = 0;
+        ArmorPiece[] pieces = GetComponentsInChildren<ArmorPiece>();
+        foreach (ArmorPiece piece in pieces)
+        {
+            armor += piece.resistance;
         }
     }
 }

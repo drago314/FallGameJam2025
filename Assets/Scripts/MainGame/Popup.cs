@@ -5,6 +5,7 @@ using TMPro;
 
 public class Popup : MonoBehaviour
 {
+    public GameObject armorPiece;
     public Weapon myWeapon;
     public float price;
     public TextMeshProUGUI priceText;
@@ -26,7 +27,10 @@ public class Popup : MonoBehaviour
         Destroy(go, 3);
 
         GameManager.Inst.AddMoney(-price);
-        GameManager.Inst.player.pw.NewWeapon(myWeapon);
+        if (myWeapon) GameManager.Inst.player.pw.NewWeapon(myWeapon);
+        else if (armorPiece) { GameManager.Inst.player.AddArmor(armorPiece); }
+
+            FindObjectOfType<MinigameManager>().currentPopup++;
 
         Destroy(gameObject);
     }

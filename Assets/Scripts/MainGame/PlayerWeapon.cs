@@ -30,8 +30,8 @@ public class PlayerWeapon : MonoBehaviour
         // drop weapon
         if (Input.GetKeyDown(KeyCode.Backspace) && currentWeapon != null)
         {
-            Instantiate(currentWeapon.pickup, transform.position, Quaternion.identity);
-            NewWeapon(null);
+            //Instantiate(currentWeapon.pickup, transform.position, Quaternion.identity);
+            //NewWeapon(null);
         }
 
         if (Input.GetMouseButton(0) && Time.time > nextFireTime && currentWeapon)
@@ -41,6 +41,7 @@ public class PlayerWeapon : MonoBehaviour
             Quaternion rot = transform.rotation;
             rot = Quaternion.Euler(new Vector3(0, 0, transform.eulerAngles.z+ Random.Range(-currentWeapon.spray/2f, currentWeapon.spray/2f)));
             GameObject bullet = Instantiate(currentWeapon.bullet, gunTip.position, rot);
+            bullet.GetComponent<Bullet>().damage = currentWeapon.damage;
             gunParticles.Play();
         }
     }
@@ -59,7 +60,7 @@ public class PlayerWeapon : MonoBehaviour
             return true;
         }
 
-        if (currentWeapon != null) Instantiate(currentWeapon.pickup, transform.position, Quaternion.identity);
+        // if (currentWeapon != null) Instantiate(currentWeapon.pickup, transform.position, Quaternion.identity);
 
         hand1.SetActive(false);
         hand2.SetActive(false);

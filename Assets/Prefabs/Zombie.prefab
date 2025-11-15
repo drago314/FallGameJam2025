@@ -606,8 +606,6 @@ MonoBehaviour:
   damage: 1
   hitRange: 1
   deathObj: {fileID: 4287046849565329631, guid: c5221572e0e976c4d88a23dbd56ea1d9, type: 3}
-  headArmorLevel: 0
-  plateArmorLevel: 0
 --- !u!50 &3240315467171723598
 Rigidbody2D:
   serializedVersion: 4
