@@ -37,7 +37,10 @@ public class PlayerWeapon : MonoBehaviour
         if (Input.GetMouseButton(0) && Time.time > nextFireTime && currentWeapon)
         {
             nextFireTime = Time.time + currentWeapon.firerate;
-            Instantiate(currentWeapon.bullet, gunTip.position, transform.rotation);
+
+            Quaternion rot = transform.rotation;
+            rot = Quaternion.Euler(new Vector3(0, 0, transform.eulerAngles.z+ Random.Range(-currentWeapon.spray/2f, currentWeapon.spray/2f)));
+            GameObject bullet = Instantiate(currentWeapon.bullet, gunTip.position, rot);
             gunParticles.Play();
         }
     }

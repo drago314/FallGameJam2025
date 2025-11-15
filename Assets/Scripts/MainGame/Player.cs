@@ -21,9 +21,13 @@ public class Player : MonoBehaviour
     public PlayerWeapon pw;
 
     public float health;
+    public float maxHealth = 5f;
     public Slider healthSlider;
     float hitTimer;
+
     public float armor;
+    private float timeSinceLastDamage = 0f;
+    private float TIME_BEFORE_START_HEAL = 2f;
 
     private void Start()
     {
@@ -57,6 +61,16 @@ public class Player : MonoBehaviour
         // animations
         if (x != 0) body.localScale = new Vector3(x > 0 ? defaultBodyScale : -defaultBodyScale, body.localScale.y, 1);
         anim.SetFloat("Speed", direction.magnitude / moveSpeed);
+
+        if (timeSinceLastDamage < TIME_BEFORE_START_HEAL)
+        {
+            timeSinceLastDamage += Time.deltaTime;
+        }
+        else if (health < maxHealth)
+        {
+            health += .001f;
+            healthSlider.value = health;
+        }
     }
 
     private void FixedUpdate()
@@ -75,8 +89,9 @@ public class Player : MonoBehaviour
         hitTimer = 1;
         health -= (1-armor)*damage;
         healthSlider.value = health;
+        timeSinceLastDamage = 0f;
 
-        foreach(SpriteRenderer sr in sr)
+        foreach (SpriteRenderer sr in sr)
         {
             sr.material = hitMat;
         }
