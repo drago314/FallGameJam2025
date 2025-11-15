@@ -9,6 +9,14 @@ public class TaskManager : MonoBehaviour
     {
         [SerializeField]
         [TextArea]
+        public string sender;
+
+        [SerializeField]
+        [TextArea]
+        public string subject;
+
+        [SerializeField]
+        [TextArea]
         public string email;
 
         [SerializeField]
@@ -19,6 +27,7 @@ public class TaskManager : MonoBehaviour
         public float payout;
     };
     public List<Task> tasks = new List<Task>();
+    public MailManager mailManager;
 
     private Dictionary<string, string> emailToOuput = new Dictionary<string, string>();
     private Dictionary<string, Task> outputToTask = new Dictionary<string, Task>();
@@ -52,6 +61,7 @@ public class TaskManager : MonoBehaviour
         emailToOuput.Remove(task.email);
         outputToTask.Remove(task.gptOutput);
         if (GameManager.Inst) GameManager.Inst.AddMoney(task.payout);
+        mailManager.DeleteMailItem(task.email);
         //add task.value to money
     }
 }
