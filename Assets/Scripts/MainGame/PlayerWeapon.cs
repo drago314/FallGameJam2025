@@ -25,6 +25,7 @@ public class PlayerWeapon : MonoBehaviour
 
         // stops gun going upside down just for you john
         weaponSr.flipY = direction.x < 0;
+        weaponSr.sortingOrder = 4 + (direction.y < 0 ? 1 : -1);
 
         // drop weapon
         if (Input.GetKeyDown(KeyCode.Backspace) && currentWeapon != null)

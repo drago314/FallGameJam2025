@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -11,15 +11,27 @@ public class Player : MonoBehaviour
     public Transform body;
     float defaultBodyScale;
 
+    public SpriteRenderer[] sr;
+    Material defaultMat;
+    public Material hitMat;
+
     public float moveSpeed, sprintMod;
     Vector2 direction;
 
     public PlayerWeapon pw;
 
+    public int health;
+    public Slider healthSlider;
+    float hitTimer;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         defaultBodyScale = body.localScale.x;
+        healthSlider.maxValue = health;
+        healthSlider.value = health;
+
+        defaultMat = sr[0].material;
     }
 
     private void Update()
@@ -42,6 +54,33 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (hitTimer > 0) hitTimer -= Time.fixedDeltaTime;
+
         rb.velocity = direction;
+    }
+
+    public void TryHit(int damage = 1)
+    {
+        if (hitTimer > 0) return;
+
+        GetComponent<AudioSource>().Play();
+
+        hitTimer = 1;
+        health-= damage;
+        healthSlider.value = health;
+
+        foreach(SpriteRenderer sr in sr)
+        {
+            sr.material = hitMat;
+        }
+        CancelInvoke("Unflash");
+        Invoke("Unflash", 0.2f);
+    }
+    private void Unflash()
+    {
+        foreach (SpriteRenderer sr in sr)
+        {
+            sr.material = defaultMat;
+        }
     }
 }

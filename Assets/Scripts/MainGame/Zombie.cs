@@ -9,20 +9,35 @@ public class Zombie : MonoBehaviour
     Material defaultMaterial;
     public Material flashMaterial;
 
-    public float moveSpeed, damage, health;
+    public float moveSpeed, health;
     Transform player;
+    Player playerS;
+
+    public int damage;
+    public float hitRange;
+
+    public GameObject deathObj;
+    private bool hit;
 
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         player = FindObjectOfType<Player>().transform;
+        playerS = player.GetComponent<Player>();
         if (mySr[0]) defaultMaterial = mySr[0].material;
     }
 
     private void FixedUpdate()
     {
         rb.MovePosition(Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.fixedDeltaTime));
+
+        if (Vector2.Distance(transform.position, player.position) < hitRange)
+        {
+            playerS.TryHit(damage);
+        }
+
+        hit = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,6 +52,9 @@ public class Zombie : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (hit) return;
+        hit = true;
+
         if (mySr[0])
         {
             foreach (SpriteRenderer sr in mySr) { sr.material = flashMaterial; }
@@ -44,9 +62,16 @@ public class Zombie : MonoBehaviour
             Invoke("Unflash", 0.14f);
         }
 
+        GetComponent<AudioSource>().Play();
+
         health -= damage;
 
-        if (health <= 0) Destroy(gameObject);
+        if (health <= 0)
+        {
+            GameObject go = Instantiate(deathObj, transform.position, Quaternion.identity);
+            Destroy(go, 3);
+            Destroy(gameObject);
+        }
     }
     private void Unflash() { foreach (SpriteRenderer sr in mySr) { sr.material = defaultMaterial; } }
 }

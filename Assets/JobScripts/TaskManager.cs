@@ -51,6 +51,7 @@ public class TaskManager : MonoBehaviour
         Task task = outputToTask.GetValueOrDefault(output);
         emailToOuput.Remove(task.email);
         outputToTask.Remove(task.gptOutput);
+        GameManager.Inst.AddMoney(task.payout);
         //add task.value to money
     }
 }

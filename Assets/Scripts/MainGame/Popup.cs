@@ -9,6 +9,8 @@ public class Popup : MonoBehaviour
     public float price;
     public TextMeshProUGUI priceText;
 
+    public GameObject buySource;
+
     private void Start()
     {
         priceText.text = "$" + price;
@@ -19,6 +21,9 @@ public class Popup : MonoBehaviour
     public void Buy()
     {
         if (GameManager.Inst.GetMoney() < price) return;
+
+        GameObject go = Instantiate(buySource);
+        Destroy(go, 3);
 
         GameManager.Inst.AddMoney(-price);
         GameManager.Inst.player.pw.NewWeapon(myWeapon);
