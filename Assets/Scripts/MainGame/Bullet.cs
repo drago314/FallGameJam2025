@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed, life, damage;
+    public bool explosive;
     public int pierces = 0;
 
     private void Start()
@@ -17,5 +18,20 @@ public class Bullet : MonoBehaviour
         transform.Translate(new Vector2(1, 0) * speed * Time.fixedDeltaTime);
     }
 
-    public void HitEnemy() { pierces--; if (pierces <= 0) Destroy(gameObject); }
+    public void HitEnemy() { 
+        if (explosive)
+        {
+            Collider2D [] colliders = Physics2D.OverlapCircleAll(transform.position, 5f);
+            foreach (Collider2D collider in colliders)
+            {
+                Zombie z = collider.gameObject.GetComponent<Zombie>();
+                if (z)
+                {
+                    float dist = Vector3.Distance(transform.position, z.gameObject.transform.position);
+                    z.TakeDamage(damage * (5f-dist));
+                }
+            }
+        }
+        pierces--; if (pierces <= 0) Destroy(gameObject);
+    }
 }

@@ -58,6 +58,7 @@ public class Zombie : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        Debug.Log(damage);
         if (hit) return;
         hit = true;
 
