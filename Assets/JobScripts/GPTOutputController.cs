@@ -29,7 +29,7 @@ public class GPTOutputController : MonoBehaviour
     private string[] thinkingStrs = { "Thinking.", "Thinking.." , "Thinking..."};
     
     
-    private Dictionary<string, string> outputMap = new Dictionary<string, string>{};
+    private Dictionary<string, string> outputMap = new Dictionary<string, string>();
 
     private int thinkingIndex = 0;
     private int outputIndex = 0;
@@ -46,25 +46,28 @@ public class GPTOutputController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("LateStart", .1f);
         foreach (InputOutputPair i in inputsAndOuputs)
         {
             outputMap.Add(i.input, i.output);
         }
+        activationButton.onClick.AddListener(StartGenerationDelayedHelper);
     }
-
-    void LateStart()
+    void StartGenerationDelayedHelper()
     {
-        activationButton.onClick.AddListener(StartGeneration);
+        StartCoroutine(StartGenerationDelayed());
     }
-
+    IEnumerator StartGenerationDelayed() //We delay the generation so that the text has updated by the time we read it
+    {
+        yield return new WaitForSeconds(.1f);
+        StartGeneration();
+    }
     void StartGeneration()
     {
         desiredOutput = GetDesiredOuput(tmpInput.text);
         currState = GenerationState.Thinking;
         thinkingIndex = 0;
         outputIndex = 0;
-        //timer = 0f
+        timer = 0f;
     }
 
     string GetDesiredOuput(string input)
