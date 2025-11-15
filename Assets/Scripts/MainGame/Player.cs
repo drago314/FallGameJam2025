@@ -20,9 +20,10 @@ public class Player : MonoBehaviour
 
     public PlayerWeapon pw;
 
-    public int health;
+    public float health;
     public Slider healthSlider;
     float hitTimer;
+    public float armor;
 
     private void Start()
     {
@@ -32,6 +33,12 @@ public class Player : MonoBehaviour
         healthSlider.value = health;
 
         defaultMat = sr[0].material;
+        ArmorPiece[] pieces = GetComponentsInChildren<ArmorPiece>();
+        foreach (ArmorPiece piece in pieces)
+        {
+            armor += piece.resistance;
+        }
+        Debug.Log(armor);
     }
 
     private void Update()
@@ -59,14 +66,14 @@ public class Player : MonoBehaviour
         rb.velocity = direction;
     }
 
-    public void TryHit(int damage = 1)
+    public void TryHit(float damage = 1)
     {
         if (hitTimer > 0) return;
 
         GetComponent<AudioSource>().Play();
 
         hitTimer = 1;
-        health-= damage;
+        health -= (1-armor)*damage;
         healthSlider.value = health;
 
         foreach(SpriteRenderer sr in sr)
