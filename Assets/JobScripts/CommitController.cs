@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using JetBrains.Annotations;
 
 public class CommitController : MonoBehaviour
 {
@@ -11,16 +12,27 @@ public class CommitController : MonoBehaviour
     public Button commitBtn;
     private TaskManager taskManager;
 
+    public GameObject dollarBill;
+    public int billsToSpawn;
+
     public void Commit()
     {
         if (taskManager.ValidateOutput(tmpInput.text))
         {
             tmpOutput.text = "Committed!";
+            tmpOutput.color = Color.green;
             //Mark task as complete and give money
             taskManager.CompleteTask(tmpInput.text);
+
+            for (int i = 0; i < billsToSpawn; i++)
+            {
+                GameObject b = Instantiate(dollarBill, commitBtn.transform.position, Quaternion.identity);
+                b.transform.parent = transform.parent.parent.parent;
+            }
         }
         else
         {
+            tmpOutput.color = Color.red;
             tmpOutput.text = "Error!";
         }
     }
