@@ -19,6 +19,7 @@ public class Zombie : MonoBehaviour
     public GameObject deathObj;
     private bool hit;
 
+    private float armor;
 
     private void Start()
     {
@@ -26,6 +27,11 @@ public class Zombie : MonoBehaviour
         player = FindObjectOfType<Player>().transform;
         playerS = player.GetComponent<Player>();
         if (mySr[0]) defaultMaterial = mySr[0].material;
+        ArmorPiece [] pieces = GetComponentsInChildren<ArmorPiece>();
+        foreach (ArmorPiece piece in pieces)
+        {
+            armor += piece.resistance;
+        }
     }
 
     private void FixedUpdate()
@@ -64,7 +70,7 @@ public class Zombie : MonoBehaviour
 
         GetComponent<AudioSource>().Play();
 
-        health -= damage;
+        health -= (1-armor)*damage;
 
         if (health <= 0)
         {
