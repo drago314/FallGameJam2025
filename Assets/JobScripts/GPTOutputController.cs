@@ -4,33 +4,21 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-[System.Serializable]
-public struct InputOutputPair
-{
-    [SerializeField]
-    [TextArea]
-    public string input;
-    [SerializeField]
-    [TextArea]
-    public string output;
-};
+
 public class GPTOutputController : MonoBehaviour
 {
     public TextMeshProUGUI tmpInput;
     public TextMeshProUGUI tmpOutput;
     public Button activationButton; //the paste button into the input field will trigger output generation
-    public List<InputOutputPair> inputsAndOuputs;
+    private TaskManager taskManager;
     
-    private float PER_CHAR_DELAY = .05f;
-    private float THINKING_ANIM_DELAY = .2f;
+    private float PER_CHAR_DELAY = .01f;
+    private float THINKING_ANIM_DELAY = .05f;
     private float THINKING_TIME = 1f;
     private float timer = 0;
     private float timeSinceLastChar = 0;
     private string[] thinkingStrs = { "Thinking.", "Thinking.." , "Thinking..."};
     
-    
-    private Dictionary<string, string> outputMap = new Dictionary<string, string>();
-
     private int thinkingIndex = 0;
     private int outputIndex = 0;
     private string desiredOutput = "";
@@ -46,10 +34,7 @@ public class GPTOutputController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach (InputOutputPair i in inputsAndOuputs)
-        {
-            outputMap.Add(i.input, i.output);
-        }
+        taskManager = GameObject.Find("TaskManager").GetComponent<TaskManager>();
         activationButton.onClick.AddListener(StartGenerationDelayedHelper);
     }
     void StartGenerationDelayedHelper()
@@ -63,23 +48,18 @@ public class GPTOutputController : MonoBehaviour
     }
     void StartGeneration()
     {
-        desiredOutput = GetDesiredOuput(tmpInput.text);
+        if (taskManager.ValidateInput(tmpInput.text))
+        {
+            desiredOutput = taskManager.GetOutput(tmpInput.text);
+        }
+        else
+        {
+            desiredOutput = "Sorry, I'm not sure.";
+        }
         currState = GenerationState.Thinking;
         thinkingIndex = 0;
         outputIndex = 0;
         timer = 0f;
-    }
-
-    string GetDesiredOuput(string input)
-    {
-        if (outputMap.ContainsKey(input))
-        {
-            return outputMap.GetValueOrDefault(input);
-        }
-        else
-        {
-            return "Sorry, I'm not sure.";
-        }
     }
 
     // Update is called once per frame
