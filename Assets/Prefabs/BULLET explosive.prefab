@@ -149,6 +149,7 @@ MonoBehaviour:
   damage: 1
   explosive: 1
   pierces: 0
+  onDeath: {fileID: 8138762294612330136, guid: cac9992e95f26894fb5b4962c4026fff, type: 3}
 --- !u!82 &3776938193935461554
 AudioSource:
   m_ObjectHideFlags: 0
