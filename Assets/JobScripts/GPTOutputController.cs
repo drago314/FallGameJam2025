@@ -13,8 +13,8 @@ public class GPTOutputController : MonoBehaviour
     private TaskManager taskManager;
     
     private float PER_CHAR_DELAY = .01f;
-    private float THINKING_ANIM_DELAY = .05f;
-    private float THINKING_TIME = 1f;
+    private float THINKING_ANIM_DELAY = .5f;
+    private float THINKING_TIME = 1.5f;
     private float timer = 0;
     private float timeSinceLastChar = 0;
     private string[] thinkingStrs = { "Thinking.", "Thinking.." , "Thinking..."};
@@ -60,6 +60,7 @@ public class GPTOutputController : MonoBehaviour
         thinkingIndex = 0;
         outputIndex = 0;
         timer = 0f;
+        timeSinceLastChar = 0f;
     }
 
     // Update is called once per frame
