@@ -810,7 +810,7 @@ MonoBehaviour:
   openedMailSubject: {fileID: 3064709589298778149}
   mailContentUI: {fileID: 8981766547585912848}
   mailItem: {fileID: 5556354417700059299, guid: 74cf31d6bb2347d4b897ba90e41df680, type: 3}
-  mailOpenedUI: {fileID: 0}
+  mailOpenedUI: {fileID: 6990439798746605529}
   activeMessages: []
   taskManager: {fileID: 1765451947372772798}
 --- !u!1 &879927642462452252
