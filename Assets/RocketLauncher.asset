@@ -16,5 +16,5 @@ MonoBehaviour:
   pickup: {fileID: 8485400304839723539, guid: ed4341fb2b6457c4bb084db3637de30e, type: 3}
   firerate: 1
   damage: 10
-  sprite: {fileID: 21300000, guid: f4a923c9132b74e49bc039d18a7e185e, type: 3}
+  sprite: {fileID: 21300000, guid: d1a461f2204cea1438711aaad65573d7, type: 3}
   spray: 0

@@ -151,3 +151,4 @@ MonoBehaviour:
   turnSpeed: 2
   disappearDis: 20
   goal: {fileID: 0}
+  sound: {fileID: 5899915781427090029, guid: 9bf972cbc377c374596048a3204e876c, type: 3}

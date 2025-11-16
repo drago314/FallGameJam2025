@@ -3229,10 +3229,10 @@ RectTransform:
   - {fileID: 8972204832481505249}
   m_Father: {fileID: 8749423336207815804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1440, y: -540}
-  m_SizeDelta: {x: 960, y: 1080}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8248731095053712681
 CanvasRenderer:
@@ -3589,10 +3589,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8749423336207815804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 480, y: -540}
-  m_SizeDelta: {x: 960, y: 1080}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5128020467659682888
 CanvasRenderer:
@@ -5787,14 +5787,14 @@ RectTransform:
   m_GameObject: {fileID: 8153820414571039956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 473836497127872659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 40, y: -40}
+  m_AnchoredPosition: {x: 121, y: -55.2}
   m_SizeDelta: {x: 198.3146, y: 55.9714}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1966907097036232516
@@ -5827,8 +5827,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: $200
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d155dcb4db2885a4fae0117149f815b6, type: 2}
-  m_sharedMaterial: {fileID: -6880409255039282065, guid: d155dcb4db2885a4fae0117149f815b6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 013d59a7c864c644e9b9fb9ba0939b88, type: 2}
+  m_sharedMaterial: {fileID: 8516194806235342376, guid: 013d59a7c864c644e9b9fb9ba0939b88, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5852,7 +5852,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.9
+  m_fontSize: 47.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5906,6 +5906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8381183018c2407c88c7cf4654f7e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneyCounter: {fileID: 0}
 --- !u!1 &8247081876881905309
 GameObject:
   m_ObjectHideFlags: 0

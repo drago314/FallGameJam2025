@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     float money;
     public Player player;
+    public TextMeshProUGUI moneyCounter;
 
     private void Awake()
     {
@@ -20,6 +22,8 @@ public class GameManager : MonoBehaviour
     private void FixedUpdate()
     {
         if (!player) player = GameObject.FindObjectOfType<Player>();
+        if (!moneyCounter) moneyCounter = GameObject.Find("Money Goal").GetComponent<TextMeshProUGUI>();
+        moneyCounter.text = "$" + money;
     }
 
     public float GetMoney() { return money; }

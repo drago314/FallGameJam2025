@@ -8,6 +8,7 @@ public class DollarBill : MonoBehaviour
     public float turnSpeed = 200f;
     public float disappearDis;
     public Transform goal;
+    public GameObject sound;
 
     float scale;
 
@@ -47,6 +48,12 @@ public class DollarBill : MonoBehaviour
         moveSpeed = Mathf.Clamp(moveSpeed * 1.04f, 0, 2000);
         turnSpeed *= 1.04f;
 
-        if (Vector2.Distance(transform.position, goal.position) < disappearDis * scale) Destroy(gameObject);
+        if (Vector2.Distance(transform.position, goal.position) < disappearDis * scale)
+        {
+            GameManager.Inst.AddMoney(3);
+            GameObject s = Instantiate(sound);
+            Destroy(s, 1);
+            Destroy(gameObject);
+        }
     }
 }
