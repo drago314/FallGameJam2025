@@ -17,22 +17,20 @@ public class MailManager : MonoBehaviour
     public TaskManager taskManager;
 
     public int currentMailItem = 0;
+    private int startTutorialCalls = 0;
 
     public void Start()
     {
-        //Invoke("AddNextMailItem", 10f);
-        //AddNextMailItem();
-        //Invoke("AddNextMailItem", 5f);
-        //Invoke("AddNextMailItem", 20f);
-        //Invoke("AddNextMailItem", 35f);
-        //Invoke("AddNextMailItem", 45f);
-        //Invoke("AddNextMailItem", 55f);
-        //Invoke("AddNextMailItem", 55f);
-        //Invoke("AddNextMailItem", 60f);
     }
+
+    //Start tutorial on second call to this function (when second zombie is killed)
     public void StartTutorial()
     {
-        Invoke("AddNextMailItem", .2f);
+        startTutorialCalls++;
+        if (startTutorialCalls > 1)
+        {
+            Invoke("AddNextMailItem", .2f);
+        }
     }
 
     public void StartGame()
@@ -41,6 +39,10 @@ public class MailManager : MonoBehaviour
         Invoke("AddNextMailItem", 5f);
         Invoke("AddNextMailItem", 20f);
         Invoke("AddNextMailItem", 35f);
+        Invoke("AddNextMailItem", 45f);
+        Invoke("AddNextMailItem", 55f);
+        Invoke("AddNextMailItem", 55f);
+        Invoke("AddNextMailItem", 60f);
     }
 
     public void SetOpenedMailText(string subject, string sender, string message)

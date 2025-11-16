@@ -15,6 +15,6 @@ public class Tab : MonoBehaviour
 
     private void FixedUpdate()
     {
-        myImage.color = myScreen.activeInHierarchy ? new Color(0.6f, 0.6f, 0.6f) : Color.white;
+        myImage.color = !myScreen.activeInHierarchy ? new Color(0.6f, 0.6f, 0.6f) : Color.white;
     }
 }
