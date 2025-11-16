@@ -34,6 +34,8 @@ public class Player : MonoBehaviour
     public GameObject[] deathStuff;
     int deathPointer;
 
+    bool dead;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -103,12 +105,15 @@ public class Player : MonoBehaviour
         CancelInvoke("Unflash");
         Invoke("Unflash", 0.2f);
 
-        if (health <= 0)
+        Camera.main.gameObject.GetComponent<CameraShake>().StartShake(0.5f);
+
+
+        if (health <= 0 && !dead)
         {
+            dead = true;
             deathStuff[0].SetActive(true);
             Camera.main.gameObject.GetComponent<CameraShake>().StartShake(1f);
-            CancelInvoke("NewDeath");
-            Invoke("NewDeath", 3);
+            Invoke("NewDeath", 1);
             moveSpeed = 0;
         }
     }
@@ -162,6 +167,7 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        else { Invoke("NewDeath", 2); }
+        else if (deathPointer == deathStuff.Length - 1) { Invoke("NewDeath", 3f); }
+        else { Invoke("NewDeath", 1.2f); }
     }
 }
