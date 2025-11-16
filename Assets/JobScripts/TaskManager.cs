@@ -36,6 +36,7 @@ public class TaskManager : MonoBehaviour
     private Dictionary<string, Task> outputToTask = new Dictionary<string, Task>();
     //private HashSet<string> validOuputs = new HashSet<string>();
 
+    public RectTransform progressBar;
     public float startingJobStanding = 5;
     private float currentJobStanding = 5;
 
@@ -78,7 +79,7 @@ public class TaskManager : MonoBehaviour
         currentJobStanding += numToAdd;
         currentJobStanding = Mathf.Clamp(currentJobStanding, 0, startingJobStanding);
 
-        // update the bar
+        progressBar.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 675 * currentJobStanding / startingJobStanding);
 
         if (currentJobStanding <= 0)
         {
