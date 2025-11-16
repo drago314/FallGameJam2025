@@ -66,7 +66,7 @@ public class GPTOutputController : MonoBehaviour
     public void ClearText()
     {
         tmpInput.text = "What's on your mind?";
-        tmpOutput.text = "Thinking...";
+        tmpOutput.text = "";
         currState = GenerationState.Done;
     }
 
