@@ -1847,6 +1847,7 @@ MonoBehaviour:
       = `${Math.round(currentProgress)}%`;\r\n    progressText.textContent = message;\r\n 
       }\r\n}"
     payout: 0
+    timeToComplete: 10
   - sender: Boss
     subject: Migrate to Supadupabase
     email: We NEED to migrate to Supadupabase RIGHT NOW.
@@ -1858,6 +1859,7 @@ MonoBehaviour:
       progressFill.textContent = `${Math.round(currentProgress)}%`;\r\n    progressText.textContent
       = message;\r\n  }\r\n}"
     payout: 0
+    timeToComplete: 10
   mailManager: {fileID: 7432498045942138629}
 --- !u!1 &2499753726368426147
 GameObject:
