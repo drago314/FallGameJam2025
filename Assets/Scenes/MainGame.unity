@@ -189,6 +189,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1868852894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &267380463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6913955868231223046, guid: 585c3e353db8ec6468ef1a9d1144e06e, type: 3}
+  m_PrefabInstance: {fileID: 1817871433}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &267380464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267380463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13bd41b70eb8ad64398ff5c8394012a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mailManager: {fileID: 859559752}
 --- !u!1 &336254770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1922,7 +1940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347063653274062197, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.001638352
+      value: -0.000026484697
       objectReference: {fileID: 0}
     - target: {fileID: 1353440731151114883, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4724,7 +4742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1381310532
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5299,7 +5317,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6913955868231223046, guid: 585c3e353db8ec6468ef1a9d1144e06e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 267380464}
   m_SourcePrefab: {fileID: 100100000, guid: 585c3e353db8ec6468ef1a9d1144e06e, type: 3}
 --- !u!1 &1821627412
 GameObject:
