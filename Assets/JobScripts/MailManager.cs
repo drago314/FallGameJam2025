@@ -18,10 +18,11 @@ public class MailManager : MonoBehaviour
 
     public void Start()
     {
-        foreach (TaskManager.Task task in taskManager.tasks)
-        {
-            AddMailItem(task);
-        }
+        AddMailItem(taskManager.tasks[0]);
+        //foreach (TaskManager.Task task in taskManager.tasks)
+        //{
+        //    AddMailItem(task);
+        //}
     }
 
     public void SetOpenedMailText(string subject, string sender, string message)

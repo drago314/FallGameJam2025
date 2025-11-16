@@ -3692,12 +3692,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5634959448813327424}
   - {fileID: 3174485604575013824}
   - {fileID: 8757326031119835783}
   - {fileID: 8961334971195221632}
   - {fileID: 4494236328792191030}
   - {fileID: 852855241808887451}
+  - {fileID: 5634959448813327424}
   - {fileID: 4021075943284904693}
   - {fileID: 1003634433537149988}
   - {fileID: 2563806432851342294}
@@ -4397,7 +4397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3339082042276356830
 RectTransform:
   m_ObjectHideFlags: 0
