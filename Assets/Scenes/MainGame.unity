@@ -493,10 +493,15 @@ MonoBehaviour:
   - {fileID: 6913955868231223046, guid: bd88dcaaaf594da42b7bb99131f8d4f2, type: 3}
   popups:
   - {fileID: 6673745674253877251, guid: b6e89c4a4e8a7d24d98aae5c97bd2446, type: 3}
-  - {fileID: 6673745674253877251, guid: b45f57d912259b9469d6e4e6293737ae, type: 3}
+  - {fileID: 6673745674253877251, guid: a0af2f93d4984554b8a3d6a77b56d254, type: 3}
   - {fileID: 6673745674253877251, guid: 1c0fa49ec51aa234d978d5a767c129d3, type: 3}
-  - {fileID: 6673745674253877251, guid: 4ced62e1ed7ab1f4c9e12a4cd03441e3, type: 3}
+  - {fileID: 6673745674253877251, guid: b45f57d912259b9469d6e4e6293737ae, type: 3}
   - {fileID: 6673745674253877251, guid: 169b7d1c2e94e6a4bbf4076174ac82cf, type: 3}
+  - {fileID: 6673745674253877251, guid: 4ced62e1ed7ab1f4c9e12a4cd03441e3, type: 3}
+  - {fileID: 6673745674253877251, guid: ced69a660ca539743b16c2dbd57ceb43, type: 3}
+  - {fileID: 6673745674253877251, guid: cc2d0f21da4b00f42a34ff923311d8b3, type: 3}
+  - {fileID: 6673745674253877251, guid: a6b26cf8f2a014045a5ee83906da405d, type: 3}
+  - {fileID: 6673745674253877251, guid: 4701c291e5ac23349b7fb87add617576, type: 3}
   currentPopup: 0
   range: 20
   timeBetweenZombies: 7
