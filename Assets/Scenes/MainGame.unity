@@ -2054,7 +2054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.size
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[0].email
@@ -2097,15 +2097,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[8].email
-      value: Hey champ. The buttons are actually complete dogwater. Can you beautify
-        for me? Thanks.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[9].email
       value: 'Hey bud,
 
         I know what you''re doing. I know how you''re going
         to fall.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[9].email
+      value: Yo dude. I lowk dont really like nitenite anymore. Can you write me
+        a powershell script to nuke it?
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[0].payout
@@ -2117,31 +2117,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[10].email
-      value: "\"Welcome to Poob, $FIRSTNAME! We're glad you're here to help us streamline
-        the future of B2B SaaS! \nBefore you start, please read this quick compliance
-        form and email me back with your answers. \nAttachment: cmpl.pdf: 302 MB\""
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[11].email
-      value: Yo dude. I lowk dont really like nitenite anymore. Can you write me
-        a powershell script to nuke it?
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[12].email
       value: "Hallo sch\xF6n! Helf mir, um etwas TOLLES zu machen! Ich brauche eine
         gute Script!"
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[13].email
+      propertyPath: tasks.Array.data[11].email
       value: I need help for my "pharmaceutical" business. Can you write me a script
         to sort regular herbs from... special ones?
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[14].email
+      propertyPath: tasks.Array.data[12].email
       value: 'Hey new guy, I can''t get my square head into my circular icon. Can
         you change the icons to be more rectangular?
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[13].email
+      value: hwo do i generate the ssh key...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[14].email
+      value: 'What if we made a mode for the site inspired by the movie... Dark mode???
+        I might be a genius '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[15].email
+      value: I think you might've pushed the API key to the repo... 1M tokens down
+        the drain...  Have you ever heard of a .env?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[16].email
+      value: I think you might've pushed the API key to the repo... 1M tokens down
+        the drain...  Have you ever heard of a .env?
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[1].payout
@@ -2201,19 +2209,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[8].payout
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[8].sender
-      value: b.ossman
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[9].payout
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[9].sender
+      propertyPath: tasks.Array.data[8].sender
       value: anon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[9].payout
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[9].sender
+      value: jr.schp
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[0].subject
@@ -2225,7 +2233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[10].sender
-      value: h.resoor
+      value: von.ziegler
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[11].payout
@@ -2233,7 +2241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[11].sender
-      value: jr.schp
+      value: "chang.industries\t"
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[12].payout
@@ -2241,7 +2249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[12].sender
-      value: von.ziegler
+      value: s.kware
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[13].payout
@@ -2249,7 +2257,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[13].sender
-      value: "chang.industries\t"
+      value: 'n.tern
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[14].payout
@@ -2257,7 +2267,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[14].sender
-      value: s.kware
+      value: 'd.signer '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[15].payout
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[15].sender
+      value: ss.titanic
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[16].payout
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[16].sender
+      value: ss.titanic
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[1].subject
@@ -2289,31 +2315,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[8].subject
-      value: 'Re: New Buttons'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[9].subject
       value: I see you.
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[10].subject
-      value: 'URGENT: Compliance'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[11].subject
+      propertyPath: tasks.Array.data[9].subject
       value: Stupid game
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[12].subject
+      propertyPath: tasks.Array.data[10].subject
       value: Komputer
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[13].subject
+      propertyPath: tasks.Array.data[11].subject
       value: Just Business
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[14].subject
+      propertyPath: tasks.Array.data[12].subject
       value: Square wont fit
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[13].subject
+      value: "What's a SSH\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[14].subject
+      value: Have you seen the Dark Knight?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[15].subject
+      value: They got our API key
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[16].subject
+      value: They got our API key
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[0].gptOutput
@@ -2384,30 +2418,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[8].gptOutput
-      value: void beautify(Item item) { make_good(item); return; } { beautify(buttons);
-        }
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[9].gptOutput
       value: im_scared() { im.so.scared; }
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[10].gptOutput
-      value: 'Taxpayer Name: Georgie P. Trasom Social Security Number: 123-45-6789
-        Filing Status: Single Address: 123 Maple Street, Springfield, DP 62704 Phone
-        Number: (555) 123-4567 Email Address: g.ptras@email.com Tax Year: 2025 Employer
-        Name: Poob Incorporated Employer Identification Number (EIN): 12-3456789
-        Wages, Salaries, Tips: $58,000 Federal Income Tax'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[11].gptOutput
+      propertyPath: tasks.Array.data[9].gptOutput
       value: "if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(\"Administrator\"))
         {\r\n    Write-Output \"Not running as Administrator. Exiting.\"\r\n    exit\r\n}\r\n\r\nWrite-Output
         \"!! DEMO ONLY !!\"\r\nWrite-Output \"This is where a destructive operation
         *would* occur.\"\r\nWrite-Output \"Target would be: $target\""
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[12].gptOutput
+      propertyPath: tasks.Array.data[10].gptOutput
       value: "VAR schr\xF6dingervariable = \"unbestimmt\"!\r\n    DRUCKE(\"Willkommen
         zum HyperEffizienz-Programm 9000!\")\r    \r\n    // Sicherheitsabfrage nach
         DIN-Norm\r\n    WENN (BenutzerZustimmung() == NEIN)\r\n    {\r\n        WERFE
@@ -2418,7 +2439,7 @@ PrefabInstance:
         \xB1 0.0001))\r\n    }"
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[13].gptOutput
+      propertyPath: tasks.Array.data[11].gptOutput
       value: "// yo dude this code like\u2026 totally does something\u2026 probably\r\n\r\nvar
         munchiesLevel = 0\r\nvar cosmicVibes = \"mellow\"\r\nvar motivation = undefined  
         // lol same\r\n\r\nfunction main() {\r\n    print(\"bro\u2026 welcome to
@@ -2426,11 +2447,32 @@ PrefabInstance:
         }"
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
-      propertyPath: tasks.Array.data[14].gptOutput
+      propertyPath: tasks.Array.data[12].gptOutput
       value: "def squarify(icon):\r\n    angle_juice = \"90\xB0\" * 4\r\n    squish
         = icon.translate(str.maketrans(\"()Oo\", \"[]\u25A0\u25A0\"))\r\n    corners
         = [\"\u231C\",\"\u231D\",\"\u231E\",\"\u231F\"]\r\n    for c in corners:\r\n       
         squish = f\"{c}{squish}{c}\"\r\n    return f\"[{angle_juice}{squish}{angle_juice}]\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[13].gptOutput
+      value: "# Generate SSH key\r\nssh-keygen -t ed25519 -C \"your_email@example.com\"\r\n\r\n#
+        Accept defaults (press Enter)\r\n# Optional: add passphrase\r\n\r\n# View
+        public key\r\ncat ~/.ssh/id_ed25519.pub\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[14].gptOutput
+      value: "// Dark mode: confirmed genius feature\r\nconst toggleDarkMode = ()
+        => document.body.classList.toggle('dark-mode');\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[15].gptOutput
+      value: "# .env saves your tokens, your sanity, and your job\r\necho \"API_KEY=your_secret_key_here\"
+        > .env\r\ngit rm --cached .env\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[16].gptOutput
+      value: "# .env saves your tokens, your sanity, and your job\r\necho \"API_KEY=your_secret_key_here\"
+        > .env\r\ngit rm --cached .env\r"
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[0].timeToComplete
@@ -2490,6 +2532,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[14].timeToComplete
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[15].timeToComplete
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[16].timeToComplete
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1777466411128183277, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
