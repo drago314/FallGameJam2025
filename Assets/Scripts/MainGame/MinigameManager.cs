@@ -14,8 +14,8 @@ public class MinigameManager : MonoBehaviour
     private int numWaves = 0;
 
     private int[] zombieStrengthShift = { 0, 0, 0, 5, 5, 5, 5};
-    private int[] numZombiesPerWave = { 5, 10, 10, 20, 20, 20 };
-    private int[] timeBetweenWaves = { 30, 15, 15, 15, 15, 15 };
+    private int[] numZombiesPerWave = { 5, 10, 6, 20, 20, 20 };
+    private int[] timeBetweenWaves = { 30, 15, 15, 20, 15, 15 };
 
     //private int zombieWindowLeft = 0;
 

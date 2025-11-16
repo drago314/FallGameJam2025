@@ -485,7 +485,7 @@ MonoBehaviour:
   armorPiece: {fileID: 0}
   altArmorPiece: {fileID: 0}
   myWeapon: {fileID: 11400000, guid: e600f8b7c0b374344b8c641040d9ee4f, type: 2}
-  price: 19.99
+  price: 3.99
   priceText: {fileID: 5837857963840832507}
   buySource: {fileID: 6795679256632386740, guid: 9f9309157184ddf459bcef86bf7dc43e, type: 3}
 --- !u!82 &4796704112222000326
