@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 336254775}
   - component: {fileID: 336254776}
   - component: {fileID: 336254777}
+  - component: {fileID: 336254778}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -463,6 +464,19 @@ MonoBehaviour:
   timeBetweenZombies: 7
   timeBetweenWaves: 20
   zombiesInWave: 15
+--- !u!114 &336254778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336254770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569afb3f87eb9994c88c9371ecc5814d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mySrs: []
 --- !u!1 &403714321
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,7 +752,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2090151855
   m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!1 &707836513

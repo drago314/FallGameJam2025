@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 5866663962665084784}
   - component: {fileID: 1447164255205942524}
   - component: {fileID: 486480652303545180}
+  - component: {fileID: -1581568677899793756}
   m_Layer: 0
   m_Name: EthEthZombie
   m_TagString: Untagged
@@ -819,6 +820,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-1581568677899793756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6913955868231223046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569afb3f87eb9994c88c9371ecc5814d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mySrs: []
 --- !u!1 &8683276236277641476
 GameObject:
   m_ObjectHideFlags: 0

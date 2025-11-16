@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bullet
   - DollarBill
+  - Armor
   layers:
   - Default
   - TransparentFX
@@ -42,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Game
+    uniqueID: 2090151855
     locked: 0

@@ -123,5 +123,7 @@ public class Player : MonoBehaviour
         {
             armor += piece.resistance;
         }
+
+        GetComponent<SpriteSort>().mySrs = GetComponentsInChildren<SpriteRenderer>();
     }
 }
