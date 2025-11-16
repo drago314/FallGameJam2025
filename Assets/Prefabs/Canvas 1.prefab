@@ -1986,8 +1986,8 @@ MonoBehaviour:
       progressFill.style.width = `${currentProgress}%`;\r\n    progressFill.textContent
       = `${Math.round(currentProgress)}%`;\r\n    progressText.textContent = message;\r\n 
       }\r\n}"
-    payout: 0
-    timeToComplete: 5
+    payout: 10
+    timeToComplete: 30
   - sender: Boss
     subject: Migrate to Supadupabase
     email: We NEED to migrate to Supadupabase RIGHT NOW.
@@ -1998,8 +1998,20 @@ MonoBehaviour:
       progressText) {\r\n    progressFill.style.width = `${currentProgress}%`;\r\n   
       progressFill.textContent = `${Math.round(currentProgress)}%`;\r\n    progressText.textContent
       = message;\r\n  }\r\n}"
-    payout: 0
-    timeToComplete: 5
+    payout: 10
+    timeToComplete: 30
+  - sender: Boss
+    subject: Migrate to Supadupabase again
+    email: We NEED to migrate to Supadupabase RIGHT NOW. again
+    gptOutput: "\n  const progressFill = document.getElementById('progressFill');\r\n 
+      const progressText = document.getElementById('progressText');\r\n  \r\n  //
+      Only update if progress is moving forward\r\n  if (percentage > currentProgress)
+      {\r\n    currentProgress = percentage;\r\n  }\r\n  \r\n  if (progressFill &&
+      progressText) {\r\n    progressFill.style.width = `${currentProgress}%`;\r\n   
+      progressFill.textContent = `${Math.round(currentProgress)}%`;\r\n agfain\n 
+      }\r\n}"
+    payout: 100
+    timeToComplete: 30
   mailManager: {fileID: 7432498045942138629}
   progressBar: {fileID: 6057131502859665778}
   startingJobStanding: 5
