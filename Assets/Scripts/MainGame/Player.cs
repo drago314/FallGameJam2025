@@ -122,13 +122,26 @@ public class Player : MonoBehaviour
     {
         if (newPiece.GetComponent<ArmorPiece>().head)
         {
+            ArmorPiece current = armorHeadHolder.GetComponentInChildren<ArmorPiece>();
+            if (current)
+            {
+                Destroy(current.gameObject);
+            }
             Instantiate(newPiece, armorHeadHolder);
         }
-        else { Instantiate(newPiece, armorTorsoHolder); }
+        else
+        {
+            ArmorPiece current = armorTorsoHolder.GetComponentInChildren<ArmorPiece>();
+            if (current)
+            {
+                Destroy(current.gameObject);
+            }
+            Instantiate(newPiece, armorTorsoHolder);
+        }
 
         newPiece.GetComponent<SpriteRenderer>().sortingOrder = sr[0].sortingOrder + 1;
 
-            armor = 0;
+        armor = 0;
         ArmorPiece[] pieces = GetComponentsInChildren<ArmorPiece>();
         foreach (ArmorPiece piece in pieces)
         {
