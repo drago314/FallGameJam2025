@@ -15,6 +15,6 @@ MonoBehaviour:
   bullet: {fileID: 8779022580402748693, guid: 174a657e1b7724e4dbcf52cae80a7a6c, type: 3}
   pickup: {fileID: 8485400304839723539, guid: ed4341fb2b6457c4bb084db3637de30e, type: 3}
   firerate: 1
-  damage: 5
+  damage: 2
   sprite: {fileID: 21300000, guid: d1a461f2204cea1438711aaad65573d7, type: 3}
   spray: 0
