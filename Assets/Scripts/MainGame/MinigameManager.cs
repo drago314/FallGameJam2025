@@ -11,17 +11,23 @@ public class MinigameManager : MonoBehaviour
     public GameObject[] popups;
     public int currentPopup;
 
+    private int numWaves = 0;
+
+    private int[] numZombiesPerWave = { 5, 20, 20, 20 };
+    private int[] timeBetweenWaves = { 30, 15, 15, 15 };
+
     //private int zombieWindowLeft = 0;
 
     public float range;
-    public float timeBetweenZombies, timeBetweenWaves;
+    public float timeBetweenZombies;
     public int zombiesInWave;
 
 
     private void Start()
     {
+        zombiesInWave = 3;
         Invoke("ZombieTick", 0);
-        Invoke("SpawnWave", timeBetweenWaves);
+        Invoke("SpawnWave", 30);
     }
 
     private void SpawnZombie()
@@ -48,7 +54,7 @@ public class MinigameManager : MonoBehaviour
         {
             zIndex = 4;
         }
-        GameObject z = Instantiate(zombies[currentPopup + zIndex]);
+        GameObject z = Instantiate(zombies[numWaves + zIndex]);
         z.transform.position = Random.insideUnitCircle.normalized * range + (Vector2)transform.position;
     }
 
@@ -60,6 +66,7 @@ public class MinigameManager : MonoBehaviour
 
     private void SpawnWave()
     {
+        zombiesInWave = numZombiesPerWave[numWaves];
         for (int i = 0; i < zombiesInWave; i++) { SpawnZombie(); }
 
         if (currentPopup < popups.Length && FindObjectOfType<Popup>() == null)
@@ -69,7 +76,9 @@ public class MinigameManager : MonoBehaviour
             p.transform.localPosition = Vector3.zero;
         }
 
-        timeBetweenWaves *= 0.9f;
-        Invoke("SpawnWave", timeBetweenWaves);
+        //timeBetweenWaves *= 0.9f;
+        Invoke("SpawnWave", timeBetweenWaves[numWaves]);
+        numWaves++;
+        Debug.Log("new wave");
     }
 }
