@@ -107,7 +107,9 @@ public class Player : MonoBehaviour
         {
             deathStuff[0].SetActive(true);
             Camera.main.gameObject.GetComponent<CameraShake>().StartShake(1f);
+            CancelInvoke("NewDeath");
             Invoke("NewDeath", 3);
+            moveSpeed = 0;
         }
     }
     private void Unflash()
