@@ -478,6 +478,7 @@ MonoBehaviour:
   - {fileID: 6673745674253877251, guid: b45f57d912259b9469d6e4e6293737ae, type: 3}
   - {fileID: 6673745674253877251, guid: 1c0fa49ec51aa234d978d5a767c129d3, type: 3}
   - {fileID: 6673745674253877251, guid: 4ced62e1ed7ab1f4c9e12a4cd03441e3, type: 3}
+  - {fileID: 6673745674253877251, guid: 169b7d1c2e94e6a4bbf4076174ac82cf, type: 3}
   currentPopup: 0
   range: 20
   timeBetweenZombies: 7
@@ -4727,7 +4728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1381310532
 RectTransform:
   m_ObjectHideFlags: 0
