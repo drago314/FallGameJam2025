@@ -63,6 +63,13 @@ public class GPTOutputController : MonoBehaviour
         timeSinceLastChar = 0f;
     }
 
+    public void ClearText()
+    {
+        tmpInput.text = "What's on your mind?";
+        tmpOutput.text = "Thinking...";
+        currState = GenerationState.Done;
+    }
+
     // Update is called once per frame
     void Update()
     {
