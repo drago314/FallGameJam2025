@@ -931,7 +931,7 @@ MonoBehaviour:
     m_Top: 8
     m_Bottom: 8
   m_ChildAlignment: 0
-  m_Spacing: -37.4
+  m_Spacing: -65.8
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
@@ -1640,7 +1640,7 @@ MonoBehaviour:
   m_MinHeight: -1
   m_PreferredWidth: 256.3
   m_PreferredHeight: -1
-  m_FlexibleWidth: -1
+  m_FlexibleWidth: 1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
 --- !u!1 &2119728554154532317
@@ -3181,7 +3181,7 @@ MonoBehaviour:
   m_MinHeight: -1
   m_PreferredWidth: 675
   m_PreferredHeight: 38
-  m_FlexibleWidth: -1
+  m_FlexibleWidth: 1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
 --- !u!1 &4854329034928566703
