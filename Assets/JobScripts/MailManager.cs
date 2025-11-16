@@ -12,6 +12,8 @@ public class MailManager : MonoBehaviour
     public GameObject mailContentUI;
     public GameObject mailItem;
     public GameObject mailOpenedUI;
+    public GameObject mailScreen;
+    public GameObject notifDot;
 
     public List<MailMessage> activeMessages;
     public TaskManager taskManager;
@@ -63,6 +65,11 @@ public class MailManager : MonoBehaviour
 
     public void AddMailItem(TaskManager.Task task)
     {
+        if (!mailScreen.activeInHierarchy)
+        {
+            //turn on notification dot
+            notifDot.SetActive(true);
+        }
         GameObject mail = Instantiate(mailItem, mailContentUI.transform);
         MailMessage message = mail.GetComponent<MailMessage>();
         message.sender.text = task.sender;
