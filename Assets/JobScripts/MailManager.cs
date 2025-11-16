@@ -16,12 +16,19 @@ public class MailManager : MonoBehaviour
     public List<MailMessage> activeMessages;
     public TaskManager taskManager;
 
+    public int currentMailItem = 0;
+
     public void Start()
     {
-        foreach (TaskManager.Task task in taskManager.tasks)
-        {
-            AddMailItem(task);
-        }
+        AddNextMailItem();
+        Invoke("AddNextMailItem", 5f);
+        Invoke("AddNextMailItem", 10f);
+        Invoke("AddNextMailItem", 15f);
+        Invoke("AddNextMailItem", 20f);
+        Invoke("AddNextMailItem", 25f);
+        Invoke("AddNextMailItem", 30f);
+        Invoke("AddNextMailItem", 35f);
+        
     }
 
     public void SetOpenedMailText(string subject, string sender, string message)
@@ -30,6 +37,14 @@ public class MailManager : MonoBehaviour
         openedMailSubject.text = subject;
         openedMailMessage.text = message;
         mailOpenedUI.SetActive(true);
+    }
+
+    public void AddNextMailItem()
+    {
+        if (currentMailItem >= taskManager.tasks.Count)
+            return;
+        AddMailItem(taskManager.tasks[currentMailItem]);
+        currentMailItem += 1;
     }
 
     public void AddMailItem(TaskManager.Task task)
