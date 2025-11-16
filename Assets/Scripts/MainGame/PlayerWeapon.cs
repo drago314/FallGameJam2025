@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerWeapon : MonoBehaviour
 {
     public float rotateSpeed;
-    Weapon currentWeapon;
+    public Weapon currentWeapon;
     public SpriteRenderer weaponSr;
     public GameObject hand1, hand2;
 
@@ -15,6 +15,10 @@ public class PlayerWeapon : MonoBehaviour
 
     public bool newPickupsOverwrite;
 
+    private void Start()
+    {
+        NewWeapon(currentWeapon);
+    }
     private void Update()
     {
         // rotate towards mouse

@@ -50,7 +50,7 @@ public class DollarBill : MonoBehaviour
 
         if (Vector2.Distance(transform.position, goal.position) < disappearDis * scale)
         {
-            GameManager.Inst.AddMoney(3);
+            GameManager.Inst.AddMoney(1);
             GameObject s = Instantiate(sound);
             Destroy(s, 1);
             Destroy(gameObject);

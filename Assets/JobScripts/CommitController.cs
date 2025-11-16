@@ -22,11 +22,12 @@ public class CommitController : MonoBehaviour
             tmpOutput.text = "Committed!";
             tmpOutput.color = Color.green;
             //Mark task as complete and give money
-            taskManager.CompleteTask(tmpInput.text);
+            float payout = taskManager.CompleteTask(tmpInput.text);
 
             GetComponent<AudioSource>().Play();
 
-            for (int i = 0; i < billsToSpawn; i++)
+            
+            for (int i = 0; i < payout; i++)
             {
                 GameObject b = Instantiate(dollarBill, commitBtn.transform.position, Quaternion.identity);
                 b.transform.parent = transform.parent.parent.parent;

@@ -19,6 +19,9 @@ public class CopyBtn : MonoBehaviour
     private void Copy()
     {
         copyPasteHandler.Copy(tmp);
-        mailOpenedObject.SetActive(false);
+        if (mailOpenedObject)
+        {
+            mailOpenedObject.SetActive(false);
+        }
     }
 }

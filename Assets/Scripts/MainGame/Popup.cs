@@ -15,6 +15,7 @@ public class Popup : MonoBehaviour
     private void Start()
     {
         priceText.text = "$" + price;
+        //Time.timeScale = 0;
     }
 
     public void Cancel() { Destroy(gameObject); }

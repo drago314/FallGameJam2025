@@ -9,11 +9,12 @@ public class Zombie : MonoBehaviour
     Material defaultMaterial;
     public Material flashMaterial;
 
-    public float moveSpeed, health;
+    public float health;
+    private float moveSpeed = 2f;
     Transform player;
     Player playerS;
 
-    public int damage;
+    private float damage = 2f;
     public float hitRange;
 
     public GameObject deathObj;
@@ -58,7 +59,6 @@ public class Zombie : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Debug.Log(damage);
         if (hit) return;
         hit = true;
 

@@ -40,6 +40,8 @@ public class TaskManager : MonoBehaviour
     public float startingJobStanding = 5;
     private float currentJobStanding = 5;
 
+    public MinigameManager minigameManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +51,7 @@ public class TaskManager : MonoBehaviour
             emailToOuput.Add(task.email, task.gptOutput);
             outputToTask.Add(task.gptOutput, task);
         }
+        minigameManager = GameObject.Find("Player").GetComponent<MinigameManager>();
     }
 
     public bool ValidateOutput(string output)
@@ -63,15 +66,23 @@ public class TaskManager : MonoBehaviour
     {
         return emailToOuput.GetValueOrDefault(input);
     }
-    public void CompleteTask(string output)
+    public float CompleteTask(string output)
     {
         Task task = outputToTask.GetValueOrDefault(output);
+        if (tasks[0].email.Equals(task.email))
+        {
+            //Progress tutorial - start consistent zombies + job waves
+            //Debug.Log("Start game");
+            minigameManager.StartGame();
+            mailManager.StartGame();
+        }
         emailToOuput.Remove(task.email);
         outputToTask.Remove(task.gptOutput);
-        if (GameManager.Inst) GameManager.Inst.AddMoney(task.payout);
+        //if (GameManager.Inst) GameManager.Inst.AddMoney(task.payout);
         UpdateJobStanding(0.5f);
         mailManager.DeleteMailItem(task.email);
         //add task.value to money
+        return task.payout;
     }
 
     public void UpdateJobStanding(float numToAdd)
@@ -79,7 +90,7 @@ public class TaskManager : MonoBehaviour
         currentJobStanding += numToAdd;
         currentJobStanding = Mathf.Clamp(currentJobStanding, 0, startingJobStanding);
 
-        Debug.Log("updated task bar " + currentJobStanding);
+        //Debug.Log("updated task bar " + currentJobStanding);
         progressBar.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 622.3f * currentJobStanding / startingJobStanding);
 
         if (currentJobStanding <= 0)

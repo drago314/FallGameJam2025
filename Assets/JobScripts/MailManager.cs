@@ -20,14 +20,27 @@ public class MailManager : MonoBehaviour
 
     public void Start()
     {
+        //Invoke("AddNextMailItem", 10f);
+        //AddNextMailItem();
+        //Invoke("AddNextMailItem", 5f);
+        //Invoke("AddNextMailItem", 20f);
+        //Invoke("AddNextMailItem", 35f);
+        //Invoke("AddNextMailItem", 45f);
+        //Invoke("AddNextMailItem", 55f);
+        //Invoke("AddNextMailItem", 55f);
+        //Invoke("AddNextMailItem", 60f);
+    }
+    public void StartTutorial()
+    {
+        Invoke("AddNextMailItem", .2f);
+    }
+
+    public void StartGame()
+    {
         AddNextMailItem();
         Invoke("AddNextMailItem", 5f);
         Invoke("AddNextMailItem", 20f);
-        Invoke("AddNextMailItem", 25f);
         Invoke("AddNextMailItem", 35f);
-        Invoke("AddNextMailItem", 40f);
-        Invoke("AddNextMailItem", 40f);
-        Invoke("AddNextMailItem", 45f);
     }
 
     public void SetOpenedMailText(string subject, string sender, string message)

@@ -13,8 +13,9 @@ public class MinigameManager : MonoBehaviour
 
     private int numWaves = 0;
 
-    private int[] numZombiesPerWave = { 5, 20, 20, 20 };
-    private int[] timeBetweenWaves = { 30, 15, 15, 15 };
+    private int[] zombieStrengthShift = { 0, 0, 0, 5, 5, 5, 5};
+    private int[] numZombiesPerWave = { 5, 10, 10, 20, 20, 20 };
+    private int[] timeBetweenWaves = { 30, 15, 15, 15, 15, 15 };
 
     //private int zombieWindowLeft = 0;
 
@@ -25,9 +26,16 @@ public class MinigameManager : MonoBehaviour
 
     private void Start()
     {
-        zombiesInWave = 3;
+        //zombiesInWave = 3;
+        ////Invoke("ZombieTick", 20);
+        ////Invoke("SpawnWave", 30);
+    }
+
+    public void StartGame()
+    {
+        zombiesInWave = 5;
         Invoke("ZombieTick", 0);
-        Invoke("SpawnWave", 30);
+        Invoke("SpawnWave", 0);
     }
 
     private void SpawnZombie()
@@ -54,7 +62,7 @@ public class MinigameManager : MonoBehaviour
         {
             zIndex = 4;
         }
-        GameObject z = Instantiate(zombies[numWaves + zIndex]);
+        GameObject z = Instantiate(zombies[Mathf.Min(numWaves + zIndex, zombies.Length-1)]);
         z.transform.position = Random.insideUnitCircle.normalized * range + (Vector2)transform.position;
     }
 
@@ -66,7 +74,7 @@ public class MinigameManager : MonoBehaviour
 
     private void SpawnWave()
     {
-        zombiesInWave = numZombiesPerWave[numWaves];
+        zombiesInWave = numZombiesPerWave[Mathf.Min(numWaves, numZombiesPerWave.Length-1)];
         for (int i = 0; i < zombiesInWave; i++) { SpawnZombie(); }
 
         if (currentPopup < popups.Length && FindObjectOfType<Popup>() == null)
@@ -77,8 +85,8 @@ public class MinigameManager : MonoBehaviour
         }
 
         //timeBetweenWaves *= 0.9f;
-        Invoke("SpawnWave", timeBetweenWaves[numWaves]);
+        Invoke("SpawnWave", timeBetweenWaves[Mathf.Min(numWaves, timeBetweenWaves.Length-1)]);
         numWaves++;
-        Debug.Log("new wave");
+        //Debug.Log(numWaves);
     }
 }

@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 486480652303545180}
   - component: {fileID: -7513387350771586007}
   m_Layer: 0
-  m_Name: GoldGoldZombie 1
+  m_Name: GoldEthZombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

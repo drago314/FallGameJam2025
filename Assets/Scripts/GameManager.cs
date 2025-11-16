@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     {
         if (!player) player = GameObject.FindObjectOfType<Player>();
         if (!moneyCounter) moneyCounter = GameObject.Find("Money Goal").GetComponent<TextMeshProUGUI>();
-        moneyCounter.text = "$" + money;
+        moneyCounter.text = "$" + money.ToString("F2");
     }
 
     public float GetMoney() { return money; }

@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     Material defaultMat;
     public Material hitMat;
 
-    public float moveSpeed, sprintMod;
+    public float moveSpeed;
     Vector2 direction;
 
     public PlayerWeapon pw;
@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     public float armor;
     public Transform armorHeadHolder, armorTorsoHolder;
     private float timeSinceLastDamage = 0f;
-    private float TIME_BEFORE_START_HEAL = 2f;
+    private float TIME_BEFORE_START_HEAL = 4f;
 
     public GameObject[] deathStuff;
     int deathPointer;
@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
         {
             armor += piece.resistance;
         }
-        Debug.Log(armor);
+        //Debug.Log(armor);
     }
 
     private void Update()
@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) y = -1;
 
         // DIRECTION controls player direction AND move speed AND anim speed
-        direction = new Vector2(x, y).normalized * moveSpeed * (Input.GetKey(KeyCode.LeftShift) ? sprintMod : 1);
+        direction = new Vector2(x, y).normalized * moveSpeed;
 
         // animations
         if (x != 0) body.localScale = new Vector3(x > 0 ? defaultBodyScale : -defaultBodyScale, body.localScale.y, 1);
