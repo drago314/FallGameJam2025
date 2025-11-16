@@ -65,7 +65,6 @@ public class MailManager : MonoBehaviour
         {
             if (message.message.Equals(text))
             {
-                Debug.Log(message.gameObject);
                 Destroy(message.gameObject);
                 if (message.message.Equals(openedMailMessage.text))
                 {

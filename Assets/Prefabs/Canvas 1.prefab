@@ -1987,7 +1987,7 @@ MonoBehaviour:
       = `${Math.round(currentProgress)}%`;\r\n    progressText.textContent = message;\r\n 
       }\r\n}"
     payout: 0
-    timeToComplete: 30
+    timeToComplete: 5
   - sender: Boss
     subject: Migrate to Supadupabase
     email: We NEED to migrate to Supadupabase RIGHT NOW.
@@ -1999,7 +1999,7 @@ MonoBehaviour:
       progressFill.textContent = `${Math.round(currentProgress)}%`;\r\n    progressText.textContent
       = message;\r\n  }\r\n}"
     payout: 0
-    timeToComplete: 30
+    timeToComplete: 5
   mailManager: {fileID: 7432498045942138629}
   progressBar: {fileID: 6057131502859665778}
   startingJobStanding: 5
