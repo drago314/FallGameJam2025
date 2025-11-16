@@ -36,9 +36,13 @@ public class TaskManager : MonoBehaviour
     private Dictionary<string, Task> outputToTask = new Dictionary<string, Task>();
     //private HashSet<string> validOuputs = new HashSet<string>();
 
+    public float startingJobStanding = 5;
+    private float currentJobStanding = 5;
+
     // Start is called before the first frame update
     void Start()
     {
+        currentJobStanding = startingJobStanding;
         foreach (Task task in tasks)
         {
             emailToOuput.Add(task.email, task.gptOutput);
@@ -64,7 +68,21 @@ public class TaskManager : MonoBehaviour
         emailToOuput.Remove(task.email);
         outputToTask.Remove(task.gptOutput);
         if (GameManager.Inst) GameManager.Inst.AddMoney(task.payout);
+        UpdateJobStanding(0.5f);
         mailManager.DeleteMailItem(task.email);
         //add task.value to money
+    }
+
+    public void UpdateJobStanding(float numToAdd)
+    {
+        currentJobStanding += numToAdd;
+        currentJobStanding = Mathf.Clamp(currentJobStanding, 0, startingJobStanding);
+
+        // update the bar
+
+        if (currentJobStanding <= 0)
+        {
+            Debug.Log("LOST BECAUSE YOU RAN OUT OF JOB STANDING");
+        }
     }
 }
