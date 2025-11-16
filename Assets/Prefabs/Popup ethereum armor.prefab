@@ -588,6 +588,7 @@ MonoBehaviour:
   price: 70.99
   priceText: {fileID: 5837857963840832507}
   buySource: {fileID: 6795679256632386740, guid: 9f9309157184ddf459bcef86bf7dc43e, type: 3}
+  aura: {fileID: 5968116029154933309, guid: 5c95e77715b307748bee6e1a995b3aa8, type: 3}
 --- !u!82 &4796704112222000326
 AudioSource:
   m_ObjectHideFlags: 0

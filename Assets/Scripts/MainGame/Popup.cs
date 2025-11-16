@@ -12,6 +12,8 @@ public class Popup : MonoBehaviour
 
     public GameObject buySource;
 
+    public GameObject aura;
+
     private void Start()
     {
         priceText.text = "$" + price;
@@ -34,6 +36,8 @@ public class Popup : MonoBehaviour
             GameManager.Inst.player.AddArmor(armorPiece);
             if (altArmorPiece) GameManager.Inst.player.AddArmor(altArmorPiece);
         }
+
+        if (aura) { Instantiate(aura); }
 
             FindObjectOfType<MinigameManager>().currentPopup++;
 
