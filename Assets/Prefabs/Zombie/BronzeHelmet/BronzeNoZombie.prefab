@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 1447164255205942524}
   - component: {fileID: 486480652303545180}
   m_Layer: 0
-  m_Name: BronzeNoZombie 1
+  m_Name: BronzeNoZombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

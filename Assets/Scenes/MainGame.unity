@@ -444,10 +444,15 @@ MonoBehaviour:
   popupParent: {fileID: 1680718196}
   zombies:
   - {fileID: 6913955868231223046, guid: 585c3e353db8ec6468ef1a9d1144e06e, type: 3}
+  - {fileID: 6913955868231223046, guid: 15e627167e7d05b4bb62d029358a3537, type: 3}
+  - {fileID: 6913955868231223046, guid: 5f13d726b483b0b4b87c6bf95965b709, type: 3}
+  - {fileID: 6913955868231223046, guid: c218c2a2094acbf489ccb99aafc5e825, type: 3}
   - {fileID: 6913955868231223046, guid: 38d03fffd23de924093dd6b4cf16f59f, type: 3}
-  - {fileID: 6913955868231223046, guid: 38d03fffd23de924093dd6b4cf16f59f, type: 3}
-  - {fileID: 6913955868231223046, guid: 38d03fffd23de924093dd6b4cf16f59f, type: 3}
-  - {fileID: 6913955868231223046, guid: 38d03fffd23de924093dd6b4cf16f59f, type: 3}
+  - {fileID: 6913955868231223046, guid: b02c8041b6736d543a4dcbef179955a8, type: 3}
+  - {fileID: 6913955868231223046, guid: bdfc16f4e9e03d546a3db79a9f3b0ee2, type: 3}
+  - {fileID: 6913955868231223046, guid: a9d736d8b3975734b9098cde7c1cddef, type: 3}
+  - {fileID: 6913955868231223046, guid: 62ca37d4e80436f4b88def185aeb41a1, type: 3}
+  - {fileID: 6913955868231223046, guid: 5c41d49bdbf5f76489a3c8c19173f835, type: 3}
   popups:
   - {fileID: 6673745674253877251, guid: abfe7b0cda1b7b24c94ae7f51aafe03a, type: 3}
   - {fileID: 6673745674253877251, guid: b45f57d912259b9469d6e4e6293737ae, type: 3}

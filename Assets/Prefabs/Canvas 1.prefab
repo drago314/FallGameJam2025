@@ -3761,7 +3761,6 @@ GameObject:
   - component: {fileID: 1275328886205236102}
   - component: {fileID: 2276789205958362281}
   - component: {fileID: 5739047514648332751}
-  - component: {fileID: 1319398587666800170}
   m_Layer: 5
   m_Name: CommitButton
   m_TagString: Untagged
@@ -3871,19 +3870,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1319398587666800170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5832205722203154067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f40e2876fa59e684ca5bd0a93fa01437, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tmp: {fileID: 4270251489382367507}
 --- !u!1 &5944573994794318531
 GameObject:
   m_ObjectHideFlags: 0
