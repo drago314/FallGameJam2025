@@ -80,7 +80,7 @@ public class TaskManager : MonoBehaviour
         currentJobStanding = Mathf.Clamp(currentJobStanding, 0, startingJobStanding);
 
         Debug.Log("updated task bar " + currentJobStanding);
-        progressBar.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 675 * currentJobStanding / startingJobStanding);
+        progressBar.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 622.3f * currentJobStanding / startingJobStanding);
 
         if (currentJobStanding <= 0)
         {
