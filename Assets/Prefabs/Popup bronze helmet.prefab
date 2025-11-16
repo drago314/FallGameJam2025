@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 8016296282194279619}
   - component: {fileID: 4796704112222000326}
   m_Layer: 5
-  m_Name: Popup armor
+  m_Name: Popup bronze helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
