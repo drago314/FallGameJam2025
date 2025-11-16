@@ -52,7 +52,10 @@ public class Zombie : MonoBehaviour
         if (collision.CompareTag("Bullet"))
         {
             Bullet bullet = collision.GetComponent<Bullet>();
-            TakeDamage(bullet.damage);
+            if (!bullet.explosive)
+            {
+                TakeDamage(bullet.damage);
+            }
             bullet.HitEnemy();
         }
     }
