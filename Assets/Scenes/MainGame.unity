@@ -1854,8 +1854,133 @@ PrefabInstance:
       value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[0].email
+      value: "Welcome new hire! we're under a tight deadline rn we need you ASAP.
+        \nHere's your first ticket: just fix our login page. \nhonestly just paste
+        this email into GPT"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[1].email
+      value: 'Hi new guy.
+
+        Here''s a new design for the home page. I hate
+        coding. I think it''s a distraction from what''s actually important. So how
+        about you do all the code for me and I send you my designs? sounds good.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[2].email
+      value: HOW DO I PUSH MY CHANGES TO THE BUTTBICKET HELP PLAESE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[3].email
+      value: I don't like new buttons. Please change them back to the old ones.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[4].email
+      value: I don't like new buttons. Please change them back to the old ones.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[5].email
+      value: I don't like new buttons. Please change them back to the old ones.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[0].sender
+      value: b.ossman
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[1].sender
+      value: d.signer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[2].sender
+      value: n.tern
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[3].sender
+      value: d.signer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[4].sender
+      value: d.signer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[5].sender
+      value: d.signer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[0].subject
       value: CLICK HERE NOW
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[1].subject
+      value: Lighthouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[2].subject
+      value: help
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[3].subject
+      value: New Buttons
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[4].subject
+      value: New Buttons
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[5].subject
+      value: New Buttons
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[0].gptOutput
+      value: "\".login-flexbox {\n  width: 50%;\n  margin-left: auto;\n  margin-right:
+        auto;\n}\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[1].gptOutput
+      value: "#homepage{\n  width: 220px;\n  height: 356px;\n  position: absolute;\n 
+        top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background:
+        linear-gradient(#00314f, #00314f) 150px 346px / 16px 10px,\n    linear-gradient(#00314f,
+        #00314f) 30px 346px / 100px 10px,"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[2].gptOutput
+      value: git add . git commit -m ""changes"" git switch main git fetch git pull
+        git merge nat git add . git push git push origin main --force
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[3].gptOutput
+      value: "\"// NewButton.tsx\nimport { Button } from \"\"@/components/ui/button\"\";
+        // from new design system\n\ninterface NewButtonProps {\n  label: string;\n 
+        onClick?: () => void;\n  variant?: \"\"default\"\" | \"\"secondary\"\" |
+        \"\"destructive\"\" | \"\"outline\"\";\n}\n\nexport function NewButton({
+        label, onClick, variant = \"\"default\"\" }: NewButtonProps) {\n  return
+        (\n    <Button onClick={onClick} variant={variant}>\n      {label}\n    </Button>\n 
+        );\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[4].gptOutput
+      value: "\"// NewButton.tsx\nimport { Button } from \"\"@/components/ui/button\"\";
+        // from new design system\n\ninterface NewButtonProps {\n  label: string;\n 
+        onClick?: () => void;\n  variant?: \"\"default\"\" | \"\"secondary\"\" |
+        \"\"destructive\"\" | \"\"outline\"\";\n}\n\nexport function NewButton({
+        label, onClick, variant = \"\"default\"\" }: NewButtonProps) {\n  return
+        (\n    <Button onClick={onClick} variant={variant}>\n      {label}\n    </Button>\n 
+        );\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[5].gptOutput
+      value: "\"// NewButton.tsx\nimport { Button } from \"\"@/components/ui/button\"\";
+        // from new design system\n\ninterface NewButtonProps {\n  label: string;\n 
+        onClick?: () => void;\n  variant?: \"\"default\"\" | \"\"secondary\"\" |
+        \"\"destructive\"\" | \"\"outline\"\";\n}\n\nexport function NewButton({
+        label, onClick, variant = \"\"default\"\" }: NewButtonProps) {\n  return
+        (\n    <Button onClick={onClick} variant={variant}>\n      {label}\n    </Button>\n 
+        );\""
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[0].timeToComplete
@@ -1863,6 +1988,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[1].timeToComplete
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[2].timeToComplete
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[3].timeToComplete
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[4].timeToComplete
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[5].timeToComplete
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1777466411128183277, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
