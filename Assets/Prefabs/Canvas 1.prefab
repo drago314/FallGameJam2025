@@ -3869,6 +3869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: {fileID: 2239968934372766959}
+  mailOpenedObject: {fileID: 0}
 --- !u!1 &5700948320841847827
 GameObject:
   m_ObjectHideFlags: 0
@@ -5627,6 +5628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: {fileID: 4680961298609122564}
+  mailOpenedObject: {fileID: 6990439798746605529}
 --- !u!1 &8022222487114127494
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class CopyBtn : MonoBehaviour
 {
     public TextMeshProUGUI tmp;
     private CopyPasteHandler copyPasteHandler;
+    public GameObject mailOpenedObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +19,6 @@ public class CopyBtn : MonoBehaviour
     private void Copy()
     {
         copyPasteHandler.Copy(tmp);
+        mailOpenedObject.SetActive(false);
     }
 }
