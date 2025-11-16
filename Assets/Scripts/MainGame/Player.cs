@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -29,6 +30,9 @@ public class Player : MonoBehaviour
     public Transform armorHeadHolder, armorTorsoHolder;
     private float timeSinceLastDamage = 0f;
     private float TIME_BEFORE_START_HEAL = 2f;
+
+    public GameObject[] deathStuff;
+    int deathPointer;
 
     private void Start()
     {
@@ -69,7 +73,7 @@ public class Player : MonoBehaviour
         }
         else if (health < maxHealth)
         {
-            health += .001f;
+            health += 1f * Time.deltaTime;
             healthSlider.value = health;
         }
     }
@@ -98,6 +102,13 @@ public class Player : MonoBehaviour
         }
         CancelInvoke("Unflash");
         Invoke("Unflash", 0.2f);
+
+        if (health <= 0)
+        {
+            deathStuff[0].SetActive(true);
+            Camera.main.gameObject.GetComponent<CameraShake>().StartShake(1f);
+            Invoke("NewDeath", 3);
+        }
     }
     private void Unflash()
     {
@@ -125,5 +136,17 @@ public class Player : MonoBehaviour
         }
 
         GetComponent<SpriteSort>().mySrs = GetComponentsInChildren<SpriteRenderer>();
+    }
+
+    private void NewDeath()
+    {
+        deathPointer++;
+        if (deathPointer < deathStuff.Length) deathStuff[deathPointer].SetActive(true);
+        Camera.main.gameObject.GetComponent<CameraShake>().StartShake(1f);
+        if (deathPointer >= deathStuff.Length)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else { Invoke("NewDeath", 2); }
     }
 }
