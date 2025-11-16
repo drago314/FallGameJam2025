@@ -65,9 +65,11 @@ public class GPTOutputController : MonoBehaviour
 
     public void ClearText()
     {
-        tmpInput.text = "What's on your mind?";
-        tmpOutput.text = "";
-        currState = GenerationState.Done;
+        if (currState == GenerationState.Done)
+        {
+            tmpInput.text = "What's on your mind?";
+            tmpOutput.text = "";
+        }
     }
 
     // Update is called once per frame

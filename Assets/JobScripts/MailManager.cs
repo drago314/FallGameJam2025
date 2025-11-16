@@ -22,12 +22,12 @@ public class MailManager : MonoBehaviour
     {
         AddNextMailItem();
         Invoke("AddNextMailItem", 5f);
-        Invoke("AddNextMailItem", 10f);
-        Invoke("AddNextMailItem", 15f);
         Invoke("AddNextMailItem", 20f);
         Invoke("AddNextMailItem", 25f);
-        Invoke("AddNextMailItem", 30f);
         Invoke("AddNextMailItem", 35f);
+        Invoke("AddNextMailItem", 40f);
+        Invoke("AddNextMailItem", 40f);
+        Invoke("AddNextMailItem", 45f);
     }
 
     public void SetOpenedMailText(string subject, string sender, string message)
