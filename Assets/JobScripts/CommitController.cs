@@ -24,6 +24,8 @@ public class CommitController : MonoBehaviour
             //Mark task as complete and give money
             taskManager.CompleteTask(tmpInput.text);
 
+            GetComponent<AudioSource>().Play();
+
             for (int i = 0; i < billsToSpawn; i++)
             {
                 GameObject b = Instantiate(dollarBill, commitBtn.transform.position, Quaternion.identity);
