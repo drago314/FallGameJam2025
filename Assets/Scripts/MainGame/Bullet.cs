@@ -32,6 +32,7 @@ public class Bullet : MonoBehaviour
                     z.TakeDamage(damage * (5f-dist));
                 }
             }
+            Camera.main.gameObject.GetComponent<CameraShake>().StartShake(0.3f);
             if (onDeath) { GameObject go = Instantiate(onDeath, transform.position, onDeath.transform.rotation); Destroy(go, 3); }
         }
         pierces--; if (pierces <= 0) Destroy(gameObject);

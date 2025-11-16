@@ -75,6 +75,7 @@ public class Zombie : MonoBehaviour
 
         if (health <= 0)
         {
+            Camera.main.gameObject.GetComponent<CameraShake>().StartShake(0.15f);
             GameObject go = Instantiate(deathObj, transform.position, Quaternion.identity);
             Destroy(go, 3);
             Destroy(gameObject);
