@@ -11,6 +11,8 @@ public class MinigameManager : MonoBehaviour
     public GameObject[] popups;
     public int currentPopup;
 
+    //private int zombieWindowLeft = 0;
+
     public float range;
     public float timeBetweenZombies, timeBetweenWaves;
     public int zombiesInWave;
@@ -24,7 +26,29 @@ public class MinigameManager : MonoBehaviour
 
     private void SpawnZombie()
     {
-        GameObject z = Instantiate(zombies[Random.Range(0, currentPopup)]);
+        float r = Random.Range(0, 100);
+        int zIndex = 0;
+        if (r < 40)
+        {
+            zIndex = 0;
+        }
+        else if (r < 65)
+        {
+            zIndex = 1;
+        }
+        else if (r < 80)
+        {
+            zIndex = 2;
+        }
+        else if (r < 93)
+        {
+            zIndex = 3;
+        }
+        else
+        {
+            zIndex = 4;
+        }
+        GameObject z = Instantiate(zombies[currentPopup + zIndex]);
         z.transform.position = Random.insideUnitCircle.normalized * range + (Vector2)transform.position;
     }
 

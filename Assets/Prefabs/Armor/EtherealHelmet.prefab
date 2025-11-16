@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4499594053246330047}
   - component: {fileID: -2430548299631624927}
   m_Layer: 0
-  m_Name: SilverHelmet
+  m_Name: EtherealHelmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 013eb6d404aea2e4a8d64802114fd2ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 24ecf24a011a9934d9bf0d9fd4bd30db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,5 +97,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeab9f40c9b155f4b8023a47f81d7937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resistance: 0.11
+  resistance: 0.33
   head: 1

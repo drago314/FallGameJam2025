@@ -97,5 +97,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeab9f40c9b155f4b8023a47f81d7937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resistance: 0.05
+  resistance: 0.04
   head: 1
