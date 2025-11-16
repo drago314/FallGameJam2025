@@ -25,6 +25,9 @@ public class TaskManager : MonoBehaviour
 
         [SerializeField]
         public float payout;
+
+        [SerializeField]
+        public float timeToComplete;
     };
     public List<Task> tasks = new List<Task>();
     public MailManager mailManager;
