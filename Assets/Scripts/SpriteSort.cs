@@ -19,8 +19,8 @@ public class SpriteSort : MonoBehaviour
     {
         foreach (SpriteRenderer spriteRenderer in mySrs)
         {
-            spriteRenderer.sortingOrder = Mathf.RoundToInt(-transform.position.y * 1000);
-            if (spriteRenderer.gameObject.CompareTag("Armor")) { spriteRenderer.sortingOrder += 15; }
+            spriteRenderer.sortingOrder = Mathf.RoundToInt((transform.position.y - 1) * -500);
+            if (spriteRenderer.gameObject.CompareTag("Armor")) { spriteRenderer.sortingOrder += 5; }
         }
     }
 }
