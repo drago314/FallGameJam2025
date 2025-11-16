@@ -2512,31 +2512,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[9].timeToComplete
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[10].timeToComplete
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[11].timeToComplete
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[12].timeToComplete
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[13].timeToComplete
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[14].timeToComplete
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[15].timeToComplete
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[16].timeToComplete
