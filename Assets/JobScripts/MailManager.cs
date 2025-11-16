@@ -50,6 +50,10 @@ public class MailManager : MonoBehaviour
         Invoke("AddNextMailItem", 75f);
         Invoke("AddNextMailItem", 80f);
         Invoke("AddNextMailItem", 85f);
+        Invoke("AddNextMailItem", 90f);
+        Invoke("AddNextMailItem", 95f);
+        Invoke("AddNextMailItem", 100f);
+        Invoke("AddNextMailItem", 105f);
     }
 
     public void SetOpenedMailText(string subject, string sender, string message)
