@@ -629,6 +629,7 @@ GameObject:
   - component: {fileID: 403714323}
   - component: {fileID: 403714322}
   - component: {fileID: 403714325}
+  - component: {fileID: 403714326}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -722,6 +723,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3264f4abb3442ea4c996455817a3b669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &403714326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403714321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191a4f624b454384786f3e5c869f0c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAspect: 1.7777778
 --- !u!1 &455272607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,13 +2558,13 @@ PrefabInstance:
         ///
         2) Reuse old code shamelessly.
 
-        /// 3) Automate anything you do
-        twice.
+        /// 3) Automate anything you do twice.
 
-        /// 4) Ship first, optimize later.
+        ///
+        4) Ship first, optimize later.
 
-        /// 5) Write
-        comments your future self understands.'
+        /// 5) Write comments your future
+        self understands.'
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[0].timeToComplete
@@ -3315,6 +3329,22 @@ PrefabInstance:
     - target: {fileID: 5020505740446811460, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -187
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024538362879243062, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 403714323}
+    - target: {fileID: 5024538362879243062, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024538362879243062, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024538362879243062, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 643176369
       objectReference: {fileID: 0}
     - target: {fileID: 5107739889642019616, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: m_Enabled
@@ -4767,7 +4797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &983349425
@@ -5745,8 +5775,8 @@ Canvas:
   m_GameObject: {fileID: 1680718192}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 403714323}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -5756,8 +5786,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 643176369
+  m_SortingOrder: 65
   m_TargetDisplay: 0
 --- !u!224 &1680718196
 RectTransform:
