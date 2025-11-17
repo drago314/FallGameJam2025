@@ -2070,7 +2070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.size
-      value: 16
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[0].email
@@ -2164,8 +2164,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[16].email
-      value: I think you might've pushed the API key to the repo... 1M tokens down
-        the drain...  Have you ever heard of a .env?
+      value: "I had to go home early, can you fill in for me? \nI think I was supposed
+        to be working on purchase UI?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[17].email
+      value: Please add session keys so that all communications on our site have
+        perfect forward security.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[18].email
+      value: 'You might be our fastest developer, well, ever...
+
+        Would you
+        mind writing some documentation on how others can be like you?'
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[1].payout
@@ -2299,7 +2311,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[16].sender
-      value: ss.titanic
+      value: av.altmann
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[17].payout
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[17].sender
+      value: sue.pervisor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[18].payout
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[18].sender
+      value: b.ossman
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[1].subject
@@ -2363,7 +2391,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[16].subject
-      value: They got our API key
+      value: Can you fill in for me?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[17].subject
+      value: Perfect forward security
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[18].subject
+      value: How are you so fast?
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[0].gptOutput
@@ -2487,8 +2523,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[16].gptOutput
-      value: "# .env saves your tokens, your sanity, and your job\r\necho \"API_KEY=your_secret_key_here\"
-        > .env\r\ngit rm --cached .env\r"
+      value: "// Temporary shop UI so nobody notices you're gone\r\nconst items =
+        [{name:\"Sword\",price:100},{name:\"Potion\",price:25}];\r\n\r\nfunction
+        renderShop() {\r\n  const shop = document.getElementById(\"shop\");\r\n 
+        shop.innerHTML = items.map(i =>\r\n    `<div class=\"item\"><h3>${i.name}</h3><p>$${i.price}</p></div>`\r\n 
+        ).join(\"\");\r\n}\r\n\r\nrenderShop();"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[17].gptOutput
+      value: "# Enable PFS with ephemeral session keys\r\nssl_protocols TLSv1.2 TLSv1.3;\r\nssl_prefer_server_ciphers
+        on;\r\nssl_ciphers \"ECDHE+AESGCM:!aNULL\";\r\nssl_session_cache shared:SSL:10m;\r\nssl_session_timeout
+        5m;\r\n# Get a real cert (e.g., certbot) and boom: forward-secure HTTPS\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[18].gptOutput
+      value: '// How to dev like me:
+
+        /// 1) Break work into tiny tasks.
+
+        ///
+        2) Reuse old code shamelessly.
+
+        /// 3) Automate anything you do
+        twice.
+
+        /// 4) Ship first, optimize later.
+
+        /// 5) Write
+        comments your future self understands.'
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[0].timeToComplete
@@ -2556,7 +2618,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: tasks.Array.data[16].timeToComplete
-      value: 30
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[17].timeToComplete
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765451947372772798, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
+      propertyPath: tasks.Array.data[18].timeToComplete
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1777466411128183277, guid: 63327f53cc105a948bac29c990f1096d, type: 3}
       propertyPath: m_AnchorMax.y
