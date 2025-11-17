@@ -82,6 +82,8 @@ public class MinigameManager : MonoBehaviour
             GameObject p = Instantiate(popups[currentPopup]);
             p.transform.parent = popupParent;
             p.transform.localPosition = Vector3.zero;
+            float mult = Screen.width / 1920;
+            p.transform.localScale = new Vector2(1, 1);
         }
 
         //timeBetweenWaves *= 0.9f;
