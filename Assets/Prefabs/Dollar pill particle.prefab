@@ -147,8 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2a4abe57473e4489b568836c36abb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 300
+  moveSpeed: 3.896104
   turnSpeed: 2
-  disappearDis: 100
+  disappearDis: 1
   goal: {fileID: 0}
   sound: {fileID: 5899915781427090029, guid: 9bf972cbc377c374596048a3204e876c, type: 3}

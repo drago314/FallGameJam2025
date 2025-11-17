@@ -31,6 +31,7 @@ public class CommitController : MonoBehaviour
             {
                 GameObject b = Instantiate(dollarBill, commitBtn.transform.position, Quaternion.identity);
                 b.transform.parent = transform.parent.parent.parent;
+                b.transform.localScale = new(1, 1);
             }
         }
         else
